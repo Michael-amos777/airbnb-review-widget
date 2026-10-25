@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vacation Rental Direct Booking - Embed Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: #e2e8f0;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
+    }
+    p {
+      color: #64748b;
+      margin: 0;
+    }
+    .widget-box {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">External Website Embed Demo</span>
+      <h1>Meadowview Country House & Cottage</h1>
+      <p>Simulating an external Squarespace / WordPress / Direct Booking website embedding the standalone Airbnb Review Widget.</p>
+    </div>
+
+    <div class="widget-box">
+      <!-- Standalone Widget Embed Target -->
+      <div 
+        id="airbnb-review-widget-YOUR_LISTING_ID"
+        data-listing-id="YOUR_LISTING_ID"
+        data-theme="sand"
+        data-accent="#FF385C"
+        data-cards="2"
+      ></div>
+    </div>
+  </div>
+
+  <!-- Standalone Script Embed Loader -->
+  <script src="/embed.js" async></script>
+</body>
+</html>
